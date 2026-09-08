@@ -1,10 +1,23 @@
 body {
-background-color: rgb(255, 8, 210);
-
+    background-color: rgb(255, 8, 210);
 }
 
 h1 {
     font-size: 100px;
     color: blueviolet;
     text-transform: uppercase;
+}
+
+/* Deixando os links roxos! 💜 */
+a {
+    color: #8B00FF; /* Roxo bem vibrante */
+    font-size: 22px; /* Um pouco maior */
+    text-decoration: none; /* Tira o sublinhado */
+    font-weight: bold; /* Deixa em negrito */
+}
+
+/* Efeito quando passa o mouse */
+a:hover {
+    color: #FF00FF; /* Fica um rosa-choque quando passa o mouse! */
+    text-decoration: underline; /* Mostra o sublinhado só no hover */
 }
