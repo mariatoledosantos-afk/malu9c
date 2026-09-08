@@ -1,23 +1,79 @@
+/* Fundo rosa que você já tinha */
 body {
     background-color: rgb(255, 8, 210);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center; /* Centraliza tudo */
+    padding: 20px;
 }
 
+/* Título principal */
 h1 {
-    font-size: 100px;
+    font-size: 60px; /* Diminui um pouco para caber na tela */
     color: blueviolet;
     text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3); /* Sombra suave */
 }
 
-/* Deixando os links roxos! 💜 */
+/* Subtítulo */
+.subtitulo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Subtítulos das seções (Funk, Sertanejo, etc) */
+h2 {
+    color: #FFD700; /* Amarelo dourado */
+    font-size: 36px;
+    margin-top: 50px; /* Espaço antes de cada seção */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+/* Container dos vídeos - deixa eles organizados */
+.videos {
+    display: flex; /* Deixa os vídeos lado a lado */
+    flex-wrap: wrap; /* Se não couber, quebra para baixo */
+    justify-content: center; /* Centraliza */
+    gap: 20px; /* Espaço entre os vídeos */
+    margin: 30px 0;
+}
+
+/* Estilo de cada vídeo */
+iframe {
+    width: 400px; /* Tamanho menor para caber na tela */
+    height: 225px; /* Mantém a proporção 16:9 */
+    border-radius: 15px; /* Borda arredondada! */
+    border: 4px solid #FFD700; /* Moldura dourada */
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.5); /* Sombra legal */
+}
+
+/* Lista de músicas (Sertanejo e Pop/Rock/MPB) */
+ul {
+    list-style: none; /* Tira as bolinhas */
+    padding: 0;
+}
+
+li {
+    margin: 15px 0; /* Espaço entre cada música */
+}
+
+/* Estilo dos links (roxo como você pediu) */
 a {
-    color: #8B00FF; /* Roxo bem vibrante */
-    font-size: 22px; /* Um pouco maior */
-    text-decoration: none; /* Tira o sublinhado */
-    font-weight: bold; /* Deixa em negrito */
+    color: #8B00FF;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco transparente */
+    padding: 10px 20px;
+    border-radius: 50px; /* Deixa arredondado igual pílula */
+    display: inline-block;
+    transition: all 0.3s ease; /* Animação suave */
 }
 
-/* Efeito quando passa o mouse */
+/* Efeito quando passa o mouse no link */
 a:hover {
-    color: #FF00FF; /* Fica um rosa-choque quando passa o mouse! */
-    text-decoration: underline; /* Mostra o sublinhado só no hover */
+    color: #FF00FF;
+    background-color: white; /* Fundo fica branco puro */
+    transform: scale(1.05); /* Aumenta um pouquinho */
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.3);
 }
